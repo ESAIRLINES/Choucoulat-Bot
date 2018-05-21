@@ -8,3 +8,11 @@ bot.on("ready", function (){
 })
 
 bot.login("NDQ4MTQ4Mzc3MDUwNDE1MTA1.DeR86Q.5GpKj8uzPiH4Cj8lLNQP-YibmMQ");
+
+bot.on('messag', message => {
+    if(message.content === "z!ping"){
+        message.reply("pong")
+        console.log('ping pong')
+    }
+
+});
